@@ -1,0 +1,30 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    :root { color-scheme: light dark; }
+    .bg-backdrop { fill: #ffffff; }
+    .hub-orbit { stroke: #1b1f23; }
+    .hub-center { fill: #1b1f23; }
+    @media (prefers-color-scheme: dark) {
+      .bg-backdrop { fill: #1a1a1a; }
+      .hub-orbit { stroke: #e6edf3; }
+      .hub-center { fill: #e6edf3; }
+    }
+  </style>
+  
+  <!-- Rounded square background -->
+  <rect x="4" y="4" width="56" height="56" rx="12" ry="12" class="bg-backdrop"/>
+  
+  <!-- Orbits -->
+  <circle cx="32" cy="32" r="20" class="hub-orbit" fill="none" stroke-width="0.75" opacity="0.5"/>
+  <circle cx="32" cy="32" r="14" class="hub-orbit" fill="none" stroke-width="0.75" opacity="0.5"/>
+  <circle cx="32" cy="32" r="8" class="hub-orbit" fill="none" stroke-width="0.75" opacity="0.5"/>
+  
+  <!-- Center hub point -->
+  <circle cx="32" cy="32" r="3.5" class="hub-center" opacity="0.9"/>
+  
+  <!-- Connection dots on orbits (4 points) -->
+  <circle cx="32" cy="14" r="1.5" class="hub-center" opacity="0.7"/>
+  <circle cx="50" cy="32" r="1.5" class="hub-center" opacity="0.7"/>
+  <circle cx="32" cy="50" r="1.5" class="hub-center" opacity="0.7"/>
+  <circle cx="14" cy="32" r="1.5" class="hub-center" opacity="0.7"/>
+</svg>

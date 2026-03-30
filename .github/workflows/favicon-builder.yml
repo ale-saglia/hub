@@ -1,0 +1,42 @@
+name: Favicon Builder
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'favicon.svg'
+  workflow_dispatch:
+
+jobs:
+  build-favicon:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+      
+      - name: Convert SVG to ICO
+        run: |
+          convert favicon.svg -define icon:auto-resize=256,128,96,64,48,32,16 favicon.ico
+      
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          if git diff --exit-code favicon.ico; then
+            echo "No changes to favicon.ico"
+          else
+            git add favicon.ico
+            git commit -m "chore: rebuild favicon.ico from favicon.svg"
+            git push
+          fi

@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light dark" />
+    
+    <title>Alessandro Saglia - Digital Governance & Data Systems</title>
+    <meta name="description" content="Digital governance, public administration, and data systems. Tech, policy, and open infrastructure in the public sector. Based in Piedmont, Italy." />
+    <meta name="keywords" content="digital governance, public administration, data systems, open source, infrastructure, policy technology" />
+    <meta name="author" content="Alessandro Saglia" />
+    <link rel="canonical" href="https://ale-saglia.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ale-saglia.com/" />
+    <meta property="og:title" content="Alessandro Saglia - Digital Governance & Data Systems" />
+    <meta property="og:description" content="Digital governance, public administration, and data systems. Tech, policy, and open infrastructure in the public sector." />
+    <meta property="og:site_name" content="Alessandro Saglia" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://ale-saglia.com/" />
+    <meta name="twitter:title" content="Alessandro Saglia - Digital Governance & Data Systems" />
+    <meta name="twitter:description" content="Digital governance, public administration, and data systems. Tech, policy, and open infrastructure in the public sector." />
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Alessandro Saglia",
+      "url": "https://ale-saglia.com",
+      "sameAs": [
+        "https://github.com/ale-saglia",
+        "https://linkedin.com/in/asaglia"
+      ],
+      "jobTitle": "Digital Governance & Data Systems Specialist",
+      "location": {
+        "@type": "Place",
+        "name": "Piedmont, Italy"
+      },
+      "email": "hello@ale-saglia.com",
+      "description": "Digital governance, public administration, and data systems",
+      "knowsAbout": ["Digital Governance", "Public Administration", "Data Systems", "Open Source", "Infrastructure"]
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #1b1f23;
+        --muted: #5b636a;
+        --line: #e6e8eb;
+        --link: #0b57d0;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+      }
+
+      .wrap {
+        width: min(760px, 92vw);
+        margin: 0 auto;
+      }
+
+      .site-header {
+        text-align: center;
+        padding: 2rem 0 0.4rem;
+      }
+
+      .header-nav {
+        margin-top: 1rem;
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+
+      .header-nav a {
+        color: var(--link);
+        text-decoration: none;
+        font-size: 0.95rem;
+      }
+
+      .header-nav a:hover {
+        text-decoration: underline;
+      }
+
+      .site-title {
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      .site-tagline {
+        margin: 0.6rem 0 0;
+        color: var(--muted);
+        font-size: 1rem;
+        max-width: 60ch;
+        line-height: 1.6;
+      }
+
+      .site-hero {
+        margin: 0.5rem 0 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+        font-weight: normal;
+      }
+
+      .hero-image {
+        margin: 2.5rem 0;
+        padding: 0;
+      }
+
+      .profile-hero {
+        float: left;
+        width: 120px;
+        height: 120px;
+        margin: 0.3rem 1.5rem 1.5rem 0;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .about-section {
+        padding: 1.5rem 0;
+        margin-bottom: 0;
+        overflow: auto;
+      }
+
+      .about-section p {
+        margin: 0 0 1.2rem;
+        line-height: 1.7;
+      }
+
+      .about-section p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 700px) {
+        .profile-hero {
+          float: none;
+          width: 100%;
+          max-width: 180px;
+          height: auto;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          margin: 0 auto 1.5rem;
+          display: block;
+        }
+      }
+
+      main {
+        padding: 0.5rem 0;
+        margin-top: 0;
+      }
+
+      .sections-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .section-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (max-width: 700px) {
+        .sections-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+
+      .section-label {
+        font-size: 0.85rem;
+        color: var(--text);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin: 0 0 1rem;
+        font-weight: 500;
+      }
+
+      .section-heading {
+        margin: 0 0 1.2rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+      .link-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1.2rem;
+      }
+
+      .link-list li {
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .link-list li:first-child {
+        border-top: 1px solid var(--line);
+      }
+
+      .link-list a {
+        color: var(--link);
+        text-decoration: none;
+        font-size: 1rem;
+      }
+
+      .link-list a:hover {
+        text-decoration: underline;
+      }
+
+      .link-list .link-desc {
+        display: block;
+        color: var(--muted);
+        font-size: 0.92rem;
+        margin-top: 0.1rem;
+      }
+
+      .site-footer {
+        margin-top: 0;
+        padding: 0 0 2rem 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+        text-align: center;
+      }
+
+      .site-footer a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      .site-footer a:hover {
+        text-decoration: underline;
+      }
+
+      .heart {
+        color: #e74c3c;
+      }
+
+      .ai {
+        font-weight: 500;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0d1117;
+          --text: #e6edf3;
+          --muted: #8b949e;
+          --line: #30363d;
+          --link: #58a6ff;
+        }
+      }
+
+      .link-list a:focus,
+      .header-nav a:focus {
+        outline: 2px solid var(--link);
+        outline-offset: 2px;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <h1 class="site-title">Alessandro Saglia</h1>
+        <p class="site-hero">Digital Governance | Public sector systems | Data interoperability | Digital health</p>
+      </header>
+
+      <section class="about-section">
+        <h2 class="section-heading">About me</h2>
+        <img src="https://github.com/ale-saglia.png" alt="Alessandro Saglia" class="profile-hero" width="120" height="120" loading="lazy" />
+        <p>I believe that technology should serve public good. My work focuses on making digital systems work better for the institutions that serve citizens - especially in healthcare and public administration where the stakes are highest.</p>
+        
+        <p>I'm interested in the intersection of policy and technology: how organizations can build resilient digital infrastructure, govern data responsibly, and navigate the complexity of institutional change. Whether working on healthcare interoperability, AI governance, or process automation, I'm driven by the challenge of solving real problems in how public institutions operate.</p>
+        
+        <p>Currently based in Piedmont, I work on regional digital health initiatives. Beyond that, I contribute to open-source projects, engage with tech communities, and continue learning - both policy frameworks and technical systems architecture. I believe the most interesting problems require both perspectives.</p>
+      </section>
+
+      <main>
+        <div class="sections-grid">
+          <section class="section-group">
+            <p class="section-label">More about me</p>
+            <ul class="link-list">
+              <li>
+                <a href="https://insight.ale-saglia.com">Insight Notes</a>
+                <span class="link-desc">Occasional notes on AI, governance, and infrastructure systems.</span>
+              </li>
+              <li>
+                <span style="color: var(--muted);">CV coming soon</span>
+                <span class="link-desc">A structured record of my professional path. Built with RenderCV. Bilingual, public previews in development.</span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="section-group">
+            <p class="section-label">Profiles</p>
+            <ul class="link-list">
+              <li>
+                <a href="https://github.com/ale-saglia">GitHub</a>
+                <span class="link-desc">Open source projects and technical writing.</span>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/asaglia">LinkedIn</a>
+                <span class="link-desc">Professional background and work history.</span>
+              </li>
+              <li>
+                <a href="mailto:hello@ale-saglia.com">hello@ale-saglia.com</a>
+                <span class="link-desc">For anything else.</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p style="margin:0">Built with HTML, principles, and care • No tracking. No cookies. <a href="https://github.com/ale-saglia/site">Open for transparency</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
