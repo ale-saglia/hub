@@ -1,30 +1,32 @@
 <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    :root { color-scheme: light dark; }
-    .bg-backdrop { fill: #ffffff; }
-    .hub-orbit { stroke: #1b1f23; }
-    .hub-center { fill: #1b1f23; }
-    @media (prefers-color-scheme: dark) {
-      .bg-backdrop { fill: #1a1a1a; }
-      .hub-orbit { stroke: #e6edf3; }
-      .hub-center { fill: #e6edf3; }
-    }
-  </style>
+  <defs>
+    <style>
+      @media (prefers-color-scheme: light) {
+        .fav-bg { fill: #ffffff; stroke: #e6e8eb; }
+        .fav-stroke { stroke: #1b1f23; }
+        .fav-fill { fill: #1b1f23; }
+      }
+      @media (prefers-color-scheme: dark) {
+        .fav-bg { fill: #0d1117; stroke: #30363d; }
+        .fav-stroke { stroke: #e6edf3; }
+        .fav-fill { fill: #e6edf3; }
+      }
+    </style>
+  </defs>
   
-  <!-- Rounded square background -->
-  <rect x="4" y="4" width="56" height="56" rx="12" ry="12" class="bg-backdrop"/>
+  <!-- Background -->
+  <rect x="4" y="4" width="56" height="56" rx="12" class="fav-bg" stroke-width="0.5"/>
   
-  <!-- Orbits -->
-  <circle cx="32" cy="32" r="20" class="hub-orbit" fill="none" stroke-width="0.75" opacity="0.5"/>
-  <circle cx="32" cy="32" r="14" class="hub-orbit" fill="none" stroke-width="0.75" opacity="0.5"/>
-  <circle cx="32" cy="32" r="8" class="hub-orbit" fill="none" stroke-width="0.75" opacity="0.5"/>
+  <!-- Concentric circles -->
+  <circle cx="32" cy="32" r="18" fill="none" class="fav-stroke" stroke-width="0.7" opacity="0.25"/>
+  <circle cx="32" cy="32" r="11" fill="none" class="fav-stroke" stroke-width="0.7" opacity="0.35"/>
   
-  <!-- Center hub point -->
-  <circle cx="32" cy="32" r="3.5" class="hub-center" opacity="0.9"/>
+  <!-- Center point -->
+  <circle cx="32" cy="32" r="4" class="fav-fill" opacity="0.9"/>
   
-  <!-- Connection dots on orbits (4 points) -->
-  <circle cx="32" cy="14" r="1.5" class="hub-center" opacity="0.7"/>
-  <circle cx="50" cy="32" r="1.5" class="hub-center" opacity="0.7"/>
-  <circle cx="32" cy="50" r="1.5" class="hub-center" opacity="0.7"/>
-  <circle cx="14" cy="32" r="1.5" class="hub-center" opacity="0.7"/>
+  <!-- Cardinal points -->
+  <circle cx="32" cy="14" r="1.8" class="fav-fill" opacity="0.5"/>
+  <circle cx="50" cy="32" r="1.8" class="fav-fill" opacity="0.5"/>
+  <circle cx="32" cy="50" r="1.8" class="fav-fill" opacity="0.5"/>
+  <circle cx="14" cy="32" r="1.8" class="fav-fill" opacity="0.5"/>
 </svg>
