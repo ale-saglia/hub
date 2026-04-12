@@ -26,7 +26,18 @@ jobs:
       
       - name: Convert SVG to ICO
         run: |
-          convert favicon.svg -define icon:auto-resize=256,128,96,64,48,32,16 favicon.ico
+          # ImageMagick does not evaluate CSS media queries, so prefers-color-scheme: dark
+          # would be silently ignored, producing a broken render. Strip the dark-mode block
+          # first so the ICO is an intentional, clean light-theme render.
+          # Modern browsers use favicon.svg directly and get full dark-mode support from there.
+          python3 -c "
+          import re
+          svg = open('favicon.svg').read()
+          svg = re.sub(r'@media\s*\(prefers-color-scheme:\s*dark\)\s*\{[^}]*\}', '', svg, flags=re.DOTALL)
+          open('favicon-ico.svg', 'w').write(svg)
+          "
+          convert favicon-ico.svg -define icon:auto-resize=256,128,96,64,48,32,16 favicon.ico
+          rm favicon-ico.svg
       
       - name: Commit and push
         run: |
