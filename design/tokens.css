@@ -1,0 +1,71 @@
+/*
+ * Design tokens — ale-saglia.com triptych
+ * Canonical reference for:
+ *   ale-saglia.com · insight.ale-saglia.com · cv.ale-saglia.com
+ *
+ * This file is not imported by any site — each site owns its copy of these values,
+ * either as inline <style> (site, cv) or external stylesheet (insight).
+ * Edit here first, then propagate to each site.
+ */
+
+
+/* ─── Color: light mode ─────────────────────────────────────────────────────
+   Identical across all three sites. */
+
+:root {
+  --bg:    #ffffff;  /* page background                                        */
+  --text:  #1b1f23;  /* primary text                                           */
+  --muted: #5b636a;  /* secondary text — labels, descriptions, footer          */
+  --line:  #e6e8eb;  /* borders, dividers, separators                          */
+  --link:  #0b57d0;  /* links, interactive elements, focus outlines            */
+}
+
+
+/* ─── Color: dark mode ──────────────────────────────────────────────────────
+   --bg / --text / --line / --link: identical across all three sites.
+   --muted: INCONSISTENT — three different values in production (see below).   */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:    #0d1117;
+    --text:  #e6edf3;
+    --line:  #30363d;
+    --link:  #58a6ff;
+
+    --muted: #8b949e;  /* ✓ aligned across all three sites */
+  }
+}
+
+
+/* ─── Typography ────────────────────────────────────────────────────────────*/
+
+:root {
+  --font-serif: Georgia, "Times New Roman", serif;
+
+  /*
+   * Current state:
+   *   ale-saglia.com          1.7
+   *   insight.ale-saglia.com  1.7
+   *   cv.ale-saglia.com       1.6  ← diverges; cv content is denser
+   *
+   * Canonical value for editorial/prose contexts.
+   */
+  --line-height-base: 1.7;
+}
+
+
+/* ─── Layout ────────────────────────────────────────────────────────────────
+   Identical across all three sites.                                           */
+
+:root {
+  --wrap:       min(760px, 92vw);
+  --breakpoint: 700px;               /* mobile/desktop switch point            */
+}
+
+
+/* ─── Browser chrome ────────────────────────────────────────────────────────
+   theme-color meta tag controls the browser UI chrome color.
+
+   All three sites use this pattern:
+     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+     <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />        */

@@ -1,0 +1,194 @@
+
+<style>
+  .fav-row { display: flex; gap: 2.5rem; justify-content: center; flex-wrap: wrap; padding: 1rem 0 0.5rem; }
+  .fav-col { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+  .fav-label { font-family: var(--font-sans); font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+  .fav-sub { font-family: var(--font-sans); font-size: 11px; color: var(--color-text-secondary); }
+  .fav-sizes { display: flex; gap: 1.2rem; align-items: flex-end; margin-top: 0.3rem; }
+  .fav-size { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; }
+  .fav-size span { font-family: var(--font-mono); font-size: 10px; color: var(--color-text-tertiary); }
+  .fav-divider { width: 100%; border: none; border-top: 1px solid var(--color-border-tertiary); margin: 1rem 0 0.5rem; }
+  .fav-section-label { font-family: var(--font-sans); font-size: 11px; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.08em; text-align: center; margin: 0.5rem 0; }
+  .dark-preview { background: #0d1117; border-radius: var(--border-radius-lg); padding: 1.5rem; margin-top: 0.5rem; }
+  .dark-preview .fav-label { color: #e6edf3; }
+  .dark-preview .fav-sub { color: #8b949e; }
+  .dark-preview .fav-size span { color: #6e7681; }
+  .tab-sim { display: flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1rem; border-radius: 6px 6px 0 0; font-family: var(--font-sans); font-size: 11px; color: var(--color-text-secondary); background: var(--color-background-secondary); border: 1px solid var(--color-border-tertiary); border-bottom: none; }
+  .tab-row { display: flex; gap: 2px; justify-content: center; margin: 1.5rem 0 0.5rem; flex-wrap: wrap; }
+  .dark-preview .tab-sim { background: #161b22; border-color: #30363d; color: #8b949e; }
+</style>
+<div class="fav-section-label">Light mode</div>
+<div class="fav-row">
+
+  <div class="fav-col">
+    <div class="fav-label">Hub</div>
+    <div class="fav-sub">ale-saglia.com</div>
+    <div class="fav-sizes">
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/>
+          <circle cx="32" cy="32" r="18" fill="none" stroke="#1b1f23" stroke-width="2.5" opacity="0.35"/>
+          <circle cx="32" cy="32" r="10" fill="none" stroke="#1b1f23" stroke-width="2.5" opacity="0.45"/>
+          <circle cx="32" cy="32" r="3.5" fill="#1b1f23"/>
+          <circle cx="32" cy="14" r="3" fill="#1b1f23" opacity="0.7"/>
+          <circle cx="50" cy="32" r="3" fill="#1b1f23" opacity="0.7"/>
+          <circle cx="32" cy="50" r="3" fill="#1b1f23" opacity="0.7"/>
+          <circle cx="14" cy="32" r="3" fill="#1b1f23" opacity="0.7"/>
+        </svg>
+        <span>64</span>
+      </div>
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="32" height="32"><rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/><circle cx="32" cy="32" r="18" fill="none" stroke="#1b1f23" stroke-width="2.5" opacity="0.35"/><circle cx="32" cy="32" r="10" fill="none" stroke="#1b1f23" stroke-width="2.5" opacity="0.45"/><circle cx="32" cy="32" r="3.5" fill="#1b1f23"/><circle cx="32" cy="14" r="3" fill="#1b1f23" opacity="0.7"/><circle cx="50" cy="32" r="3" fill="#1b1f23" opacity="0.7"/><circle cx="32" cy="50" r="3" fill="#1b1f23" opacity="0.7"/><circle cx="14" cy="32" r="3" fill="#1b1f23" opacity="0.7"/></svg>
+        <span>32</span>
+      </div>
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="16" height="16"><rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/><circle cx="32" cy="32" r="18" fill="none" stroke="#1b1f23" stroke-width="2.5" opacity="0.35"/><circle cx="32" cy="32" r="10" fill="none" stroke="#1b1f23" stroke-width="2.5" opacity="0.45"/><circle cx="32" cy="32" r="3.5" fill="#1b1f23"/><circle cx="32" cy="14" r="3" fill="#1b1f23" opacity="0.7"/><circle cx="50" cy="32" r="3" fill="#1b1f23" opacity="0.7"/><circle cx="32" cy="50" r="3" fill="#1b1f23" opacity="0.7"/><circle cx="14" cy="32" r="3" fill="#1b1f23" opacity="0.7"/></svg>
+        <span>16</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fav-col">
+    <div class="fav-label">Insight</div>
+    <div class="fav-sub">insight.ale-saglia.com</div>
+    <div class="fav-sizes">
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/>
+          <line x1="32" y1="10" x2="32" y2="54" stroke="#1b1f23" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+          <line x1="10" y1="32" x2="54" y2="32" stroke="#1b1f23" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+          <line x1="16" y1="16" x2="48" y2="48" stroke="#1b1f23" stroke-width="3" opacity="0.25" stroke-linecap="round"/>
+          <line x1="48" y1="16" x2="16" y2="48" stroke="#1b1f23" stroke-width="3" opacity="0.25" stroke-linecap="round"/>
+          <circle cx="32" cy="32" r="4" fill="#1b1f23"/>
+        </svg>
+        <span>64</span>
+      </div>
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="32" height="32"><rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/><line x1="32" y1="10" x2="32" y2="54" stroke="#1b1f23" stroke-width="3" opacity="0.4" stroke-linecap="round"/><line x1="10" y1="32" x2="54" y2="32" stroke="#1b1f23" stroke-width="3" opacity="0.4" stroke-linecap="round"/><line x1="16" y1="16" x2="48" y2="48" stroke="#1b1f23" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="48" y1="16" x2="16" y2="48" stroke="#1b1f23" stroke-width="3" opacity="0.25" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#1b1f23"/></svg>
+        <span>32</span>
+      </div>
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="16" height="16"><rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/><line x1="32" y1="10" x2="32" y2="54" stroke="#1b1f23" stroke-width="3" opacity="0.4" stroke-linecap="round"/><line x1="10" y1="32" x2="54" y2="32" stroke="#1b1f23" stroke-width="3" opacity="0.4" stroke-linecap="round"/><line x1="16" y1="16" x2="48" y2="48" stroke="#1b1f23" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="48" y1="16" x2="16" y2="48" stroke="#1b1f23" stroke-width="3" opacity="0.25" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#1b1f23"/></svg>
+        <span>16</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fav-col">
+    <div class="fav-label">CV</div>
+    <div class="fav-sub">cv.ale-saglia.com</div>
+    <div class="fav-sizes">
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/>
+          <line x1="13" y1="17" x2="51" y2="17" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+          <line x1="13" y1="27" x2="51" y2="27" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+          <line x1="13" y1="37" x2="51" y2="37" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+          <line x1="13" y1="47" x2="51" y2="47" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+          <circle cx="32" cy="32" r="4" fill="#1b1f23"/>
+        </svg>
+        <span>64</span>
+      </div>
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="32" height="32"><rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/><line x1="13" y1="17" x2="51" y2="17" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="13" y1="27" x2="51" y2="27" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="13" y1="37" x2="51" y2="37" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="13" y1="47" x2="51" y2="47" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#1b1f23"/></svg>
+        <span>32</span>
+      </div>
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="16" height="16"><rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/><line x1="13" y1="17" x2="51" y2="17" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="13" y1="27" x2="51" y2="27" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="13" y1="37" x2="51" y2="37" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="13" y1="47" x2="51" y2="47" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#1b1f23"/></svg>
+        <span>16</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="fav-divider">
+<div class="fav-section-label">Tab bar test — light</div>
+<div class="tab-row">
+  <div class="tab-sim">
+    <svg viewBox="0 0 64 64" width="16" height="16"><rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/><circle cx="32" cy="32" r="18" fill="none" stroke="#1b1f23" stroke-width="2.5" opacity="0.35"/><circle cx="32" cy="32" r="10" fill="none" stroke="#1b1f23" stroke-width="2.5" opacity="0.45"/><circle cx="32" cy="32" r="3.5" fill="#1b1f23"/><circle cx="32" cy="14" r="3" fill="#1b1f23" opacity="0.7"/><circle cx="50" cy="32" r="3" fill="#1b1f23" opacity="0.7"/><circle cx="32" cy="50" r="3" fill="#1b1f23" opacity="0.7"/><circle cx="14" cy="32" r="3" fill="#1b1f23" opacity="0.7"/></svg>
+    ale-saglia.com
+  </div>
+  <div class="tab-sim">
+    <svg viewBox="0 0 64 64" width="16" height="16"><rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/><line x1="32" y1="10" x2="32" y2="54" stroke="#1b1f23" stroke-width="3" opacity="0.4" stroke-linecap="round"/><line x1="10" y1="32" x2="54" y2="32" stroke="#1b1f23" stroke-width="3" opacity="0.4" stroke-linecap="round"/><line x1="16" y1="16" x2="48" y2="48" stroke="#1b1f23" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="48" y1="16" x2="16" y2="48" stroke="#1b1f23" stroke-width="3" opacity="0.25" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#1b1f23"/></svg>
+    Insight Notes
+  </div>
+  <div class="tab-sim">
+    <svg viewBox="0 0 64 64" width="16" height="16"><rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/><line x1="13" y1="17" x2="51" y2="17" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="13" y1="27" x2="51" y2="27" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="13" y1="37" x2="51" y2="37" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/><line x1="13" y1="47" x2="51" y2="47" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#1b1f23"/></svg>
+    CV — Alessandro Saglia
+  </div>
+</div>
+
+<hr class="fav-divider">
+<div class="fav-section-label">Dark mode</div>
+<div class="dark-preview">
+<div class="fav-row" style="padding-bottom:0.5rem">
+  <div class="fav-col">
+    <div class="fav-label">Hub</div>
+    <div class="fav-sizes">
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="64" height="64"><rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/><circle cx="32" cy="32" r="18" fill="none" stroke="#e6edf3" stroke-width="2.5" opacity="0.25"/><circle cx="32" cy="32" r="10" fill="none" stroke="#e6edf3" stroke-width="2.5" opacity="0.35"/><circle cx="32" cy="32" r="3.5" fill="#e6edf3"/><circle cx="32" cy="14" r="3" fill="#e6edf3" opacity="0.6"/><circle cx="50" cy="32" r="3" fill="#e6edf3" opacity="0.6"/><circle cx="32" cy="50" r="3" fill="#e6edf3" opacity="0.6"/><circle cx="14" cy="32" r="3" fill="#e6edf3" opacity="0.6"/></svg>
+        <span>64</span>
+      </div>
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="32" height="32"><rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/><circle cx="32" cy="32" r="18" fill="none" stroke="#e6edf3" stroke-width="2.5" opacity="0.25"/><circle cx="32" cy="32" r="10" fill="none" stroke="#e6edf3" stroke-width="2.5" opacity="0.35"/><circle cx="32" cy="32" r="3.5" fill="#e6edf3"/><circle cx="32" cy="14" r="3" fill="#e6edf3" opacity="0.6"/><circle cx="50" cy="32" r="3" fill="#e6edf3" opacity="0.6"/><circle cx="32" cy="50" r="3" fill="#e6edf3" opacity="0.6"/><circle cx="14" cy="32" r="3" fill="#e6edf3" opacity="0.6"/></svg>
+        <span>32</span>
+      </div>
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="16" height="16"><rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/><circle cx="32" cy="32" r="18" fill="none" stroke="#e6edf3" stroke-width="2.5" opacity="0.25"/><circle cx="32" cy="32" r="10" fill="none" stroke="#e6edf3" stroke-width="2.5" opacity="0.35"/><circle cx="32" cy="32" r="3.5" fill="#e6edf3"/><circle cx="32" cy="14" r="3" fill="#e6edf3" opacity="0.6"/><circle cx="50" cy="32" r="3" fill="#e6edf3" opacity="0.6"/><circle cx="32" cy="50" r="3" fill="#e6edf3" opacity="0.6"/><circle cx="14" cy="32" r="3" fill="#e6edf3" opacity="0.6"/></svg>
+        <span>16</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fav-col">
+    <div class="fav-label">Insight</div>
+    <div class="fav-sizes">
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="64" height="64"><rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/><line x1="32" y1="10" x2="32" y2="54" stroke="#e6edf3" stroke-width="3" opacity="0.3" stroke-linecap="round"/><line x1="10" y1="32" x2="54" y2="32" stroke="#e6edf3" stroke-width="3" opacity="0.3" stroke-linecap="round"/><line x1="16" y1="16" x2="48" y2="48" stroke="#e6edf3" stroke-width="3" opacity="0.18" stroke-linecap="round"/><line x1="48" y1="16" x2="16" y2="48" stroke="#e6edf3" stroke-width="3" opacity="0.18" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#e6edf3"/></svg>
+        <span>64</span>
+      </div>
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="32" height="32"><rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/><line x1="32" y1="10" x2="32" y2="54" stroke="#e6edf3" stroke-width="3" opacity="0.3" stroke-linecap="round"/><line x1="10" y1="32" x2="54" y2="32" stroke="#e6edf3" stroke-width="3" opacity="0.3" stroke-linecap="round"/><line x1="16" y1="16" x2="48" y2="48" stroke="#e6edf3" stroke-width="3" opacity="0.18" stroke-linecap="round"/><line x1="48" y1="16" x2="16" y2="48" stroke="#e6edf3" stroke-width="3" opacity="0.18" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#e6edf3"/></svg>
+        <span>32</span>
+      </div>
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="16" height="16"><rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/><line x1="32" y1="10" x2="32" y2="54" stroke="#e6edf3" stroke-width="3" opacity="0.3" stroke-linecap="round"/><line x1="10" y1="32" x2="54" y2="32" stroke="#e6edf3" stroke-width="3" opacity="0.3" stroke-linecap="round"/><line x1="16" y1="16" x2="48" y2="48" stroke="#e6edf3" stroke-width="3" opacity="0.18" stroke-linecap="round"/><line x1="48" y1="16" x2="16" y2="48" stroke="#e6edf3" stroke-width="3" opacity="0.18" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#e6edf3"/></svg>
+        <span>16</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fav-col">
+    <div class="fav-label">CV</div>
+    <div class="fav-sizes">
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="64" height="64"><rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/><line x1="13" y1="17" x2="51" y2="17" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="13" y1="27" x2="51" y2="27" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="13" y1="37" x2="51" y2="37" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="13" y1="47" x2="51" y2="47" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#e6edf3"/></svg>
+        <span>64</span>
+      </div>
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="32" height="32"><rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/><line x1="13" y1="17" x2="51" y2="17" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="13" y1="27" x2="51" y2="27" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="13" y1="37" x2="51" y2="37" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="13" y1="47" x2="51" y2="47" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#e6edf3"/></svg>
+        <span>32</span>
+      </div>
+      <div class="fav-size">
+        <svg viewBox="0 0 64 64" width="16" height="16"><rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/><line x1="13" y1="17" x2="51" y2="17" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="13" y1="27" x2="51" y2="27" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="13" y1="37" x2="51" y2="37" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="13" y1="47" x2="51" y2="47" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#e6edf3"/></svg>
+        <span>16</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-row" style="margin-top:1rem">
+  <div class="tab-sim">
+    <svg viewBox="0 0 64 64" width="16" height="16"><rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/><circle cx="32" cy="32" r="18" fill="none" stroke="#e6edf3" stroke-width="2.5" opacity="0.25"/><circle cx="32" cy="32" r="10" fill="none" stroke="#e6edf3" stroke-width="2.5" opacity="0.35"/><circle cx="32" cy="32" r="3.5" fill="#e6edf3"/><circle cx="32" cy="14" r="3" fill="#e6edf3" opacity="0.6"/><circle cx="50" cy="32" r="3" fill="#e6edf3" opacity="0.6"/><circle cx="32" cy="50" r="3" fill="#e6edf3" opacity="0.6"/><circle cx="14" cy="32" r="3" fill="#e6edf3" opacity="0.6"/></svg>
+    ale-saglia.com
+  </div>
+  <div class="tab-sim">
+    <svg viewBox="0 0 64 64" width="16" height="16"><rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/><line x1="32" y1="10" x2="32" y2="54" stroke="#e6edf3" stroke-width="3" opacity="0.3" stroke-linecap="round"/><line x1="10" y1="32" x2="54" y2="32" stroke="#e6edf3" stroke-width="3" opacity="0.3" stroke-linecap="round"/><line x1="16" y1="16" x2="48" y2="48" stroke="#e6edf3" stroke-width="3" opacity="0.18" stroke-linecap="round"/><line x1="48" y1="16" x2="16" y2="48" stroke="#e6edf3" stroke-width="3" opacity="0.18" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#e6edf3"/></svg>
+    Insight Notes
+  </div>
+  <div class="tab-sim">
+    <svg viewBox="0 0 64 64" width="16" height="16"><rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/><line x1="13" y1="17" x2="51" y2="17" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="13" y1="27" x2="51" y2="27" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="13" y1="37" x2="51" y2="37" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><line x1="13" y1="47" x2="51" y2="47" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#e6edf3"/></svg>
+    CV — Alessandro Saglia
+  </div>
+</div>
+</div>

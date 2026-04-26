@@ -1,0 +1,165 @@
+<svg viewBox="0 0 660 430" xmlns="http://www.w3.org/2000/svg"
+     font-family="Georgia, 'Times New Roman', serif">
+
+<defs>
+  <symbol id="hub-l" viewBox="0 0 64 64">
+    <rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/>
+    <circle cx="32" cy="32" r="18" fill="none" stroke="#1b1f23" stroke-width="2.5" opacity="0.35"/>
+    <circle cx="32" cy="32" r="10" fill="none" stroke="#1b1f23" stroke-width="2.5" opacity="0.45"/>
+    <circle cx="32" cy="32" r="3.5" fill="#1b1f23"/>
+    <circle cx="32" cy="14" r="3" fill="#1b1f23" opacity="0.7"/>
+    <circle cx="50" cy="32" r="3" fill="#1b1f23" opacity="0.7"/>
+    <circle cx="32" cy="50" r="3" fill="#1b1f23" opacity="0.7"/>
+    <circle cx="14" cy="32" r="3" fill="#1b1f23" opacity="0.7"/>
+  </symbol>
+  <symbol id="insight-l" viewBox="0 0 64 64">
+    <rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/>
+    <line x1="32" y1="10" x2="32" y2="54" stroke="#1b1f23" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+    <line x1="10" y1="32" x2="54" y2="32" stroke="#1b1f23" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+    <line x1="16" y1="16" x2="48" y2="48" stroke="#1b1f23" stroke-width="3" opacity="0.25" stroke-linecap="round"/>
+    <line x1="48" y1="16" x2="16" y2="48" stroke="#1b1f23" stroke-width="3" opacity="0.25" stroke-linecap="round"/>
+    <circle cx="32" cy="32" r="4" fill="#1b1f23"/>
+  </symbol>
+  <symbol id="cv-l" viewBox="0 0 64 64">
+    <rect x="4" y="4" width="56" height="56" rx="12" fill="#ffffff" stroke="#e6e8eb" stroke-width="0.5"/>
+    <line x1="13" y1="17" x2="51" y2="17" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+    <line x1="13" y1="27" x2="51" y2="27" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+    <line x1="13" y1="37" x2="51" y2="37" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+    <line x1="13" y1="47" x2="51" y2="47" stroke="#1b1f23" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+    <circle cx="32" cy="32" r="4" fill="#1b1f23"/>
+  </symbol>
+  <symbol id="hub-d" viewBox="0 0 64 64">
+    <rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/>
+    <circle cx="32" cy="32" r="18" fill="none" stroke="#e6edf3" stroke-width="2.5" opacity="0.25"/>
+    <circle cx="32" cy="32" r="10" fill="none" stroke="#e6edf3" stroke-width="2.5" opacity="0.35"/>
+    <circle cx="32" cy="32" r="3.5" fill="#e6edf3"/>
+    <circle cx="32" cy="14" r="3" fill="#e6edf3" opacity="0.6"/>
+    <circle cx="50" cy="32" r="3" fill="#e6edf3" opacity="0.6"/>
+    <circle cx="32" cy="50" r="3" fill="#e6edf3" opacity="0.6"/>
+    <circle cx="14" cy="32" r="3" fill="#e6edf3" opacity="0.6"/>
+  </symbol>
+  <symbol id="insight-d" viewBox="0 0 64 64">
+    <rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/>
+    <line x1="32" y1="10" x2="32" y2="54" stroke="#e6edf3" stroke-width="3" opacity="0.3" stroke-linecap="round"/>
+    <line x1="10" y1="32" x2="54" y2="32" stroke="#e6edf3" stroke-width="3" opacity="0.3" stroke-linecap="round"/>
+    <line x1="16" y1="16" x2="48" y2="48" stroke="#e6edf3" stroke-width="3" opacity="0.18" stroke-linecap="round"/>
+    <line x1="48" y1="16" x2="16" y2="48" stroke="#e6edf3" stroke-width="3" opacity="0.18" stroke-linecap="round"/>
+    <circle cx="32" cy="32" r="4" fill="#e6edf3"/>
+  </symbol>
+  <symbol id="cv-d" viewBox="0 0 64 64">
+    <rect x="4" y="4" width="56" height="56" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="0.5"/>
+    <line x1="13" y1="17" x2="51" y2="17" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/>
+    <line x1="13" y1="27" x2="51" y2="27" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/>
+    <line x1="13" y1="37" x2="51" y2="37" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/>
+    <line x1="13" y1="47" x2="51" y2="47" stroke="#e6edf3" stroke-width="3" opacity="0.25" stroke-linecap="round"/>
+    <circle cx="32" cy="32" r="4" fill="#e6edf3"/>
+  </symbol>
+</defs>
+
+<!-- Light background -->
+<rect width="660" height="235" fill="#ffffff"/>
+
+<!-- ─── LIGHT MODE ───────────────────────────────────────────────────── -->
+<text x="330" y="22" text-anchor="middle" font-size="11" fill="#8b949e" letter-spacing="0.08em" font-weight="500">LIGHT MODE</text>
+
+<!-- Hub (cx=110) -->
+<text x="110" y="44" text-anchor="middle" font-size="13" font-weight="500" fill="#1b1f23">Hub</text>
+<text x="110" y="59" text-anchor="middle" font-size="10" fill="#8b949e">ale-saglia.com</text>
+<use href="#hub-l" x="40"  y="81"  width="64" height="64"/>
+<use href="#hub-l" x="120" y="113" width="32" height="32"/>
+<use href="#hub-l" x="164" y="129" width="16" height="16"/>
+<text x="72"  y="159" text-anchor="middle" font-size="9" fill="#8b949e" font-family="monospace">64</text>
+<text x="136" y="159" text-anchor="middle" font-size="9" fill="#8b949e" font-family="monospace">32</text>
+<text x="172" y="159" text-anchor="middle" font-size="9" fill="#8b949e" font-family="monospace">16</text>
+
+<!-- Insight (cx=330) -->
+<text x="330" y="44" text-anchor="middle" font-size="13" font-weight="500" fill="#1b1f23">Insight</text>
+<text x="330" y="59" text-anchor="middle" font-size="10" fill="#8b949e">insight.ale-saglia.com</text>
+<use href="#insight-l" x="260" y="81"  width="64" height="64"/>
+<use href="#insight-l" x="340" y="113" width="32" height="32"/>
+<use href="#insight-l" x="384" y="129" width="16" height="16"/>
+<text x="292" y="159" text-anchor="middle" font-size="9" fill="#8b949e" font-family="monospace">64</text>
+<text x="356" y="159" text-anchor="middle" font-size="9" fill="#8b949e" font-family="monospace">32</text>
+<text x="392" y="159" text-anchor="middle" font-size="9" fill="#8b949e" font-family="monospace">16</text>
+
+<!-- CV (cx=550) -->
+<text x="550" y="44" text-anchor="middle" font-size="13" font-weight="500" fill="#1b1f23">CV</text>
+<text x="550" y="59" text-anchor="middle" font-size="10" fill="#8b949e">cv.ale-saglia.com</text>
+<use href="#cv-l" x="480" y="81"  width="64" height="64"/>
+<use href="#cv-l" x="560" y="113" width="32" height="32"/>
+<use href="#cv-l" x="604" y="129" width="16" height="16"/>
+<text x="512" y="159" text-anchor="middle" font-size="9" fill="#8b949e" font-family="monospace">64</text>
+<text x="576" y="159" text-anchor="middle" font-size="9" fill="#8b949e" font-family="monospace">32</text>
+<text x="612" y="159" text-anchor="middle" font-size="9" fill="#8b949e" font-family="monospace">16</text>
+
+<!-- Divider -->
+<line x1="30" y1="173" x2="630" y2="173" stroke="#e6e8eb" stroke-width="1"/>
+
+<!-- Tab bar label -->
+<text x="330" y="189" text-anchor="middle" font-size="10" fill="#8b949e" letter-spacing="0.06em" font-weight="500">TAB BAR TEST — LIGHT</text>
+
+<!-- Light tabs (y=199, h=24) -->
+<rect x="90"  y="199" width="155" height="24" rx="4" fill="#f6f8fa" stroke="#e6e8eb" stroke-width="1"/>
+<use href="#hub-l"     x="98"  y="203" width="16" height="16"/>
+<text x="120" y="215" font-size="11" fill="#5b636a">ale-saglia.com</text>
+
+<rect x="253" y="199" width="155" height="24" rx="4" fill="#f6f8fa" stroke="#e6e8eb" stroke-width="1"/>
+<use href="#insight-l" x="261" y="203" width="16" height="16"/>
+<text x="283" y="215" font-size="11" fill="#5b636a">Insight Notes</text>
+
+<rect x="416" y="199" width="155" height="24" rx="4" fill="#f6f8fa" stroke="#e6e8eb" stroke-width="1"/>
+<use href="#cv-l"      x="424" y="203" width="16" height="16"/>
+<text x="446" y="215" font-size="11" fill="#5b636a">CV — A. Saglia</text>
+
+<!-- ─── DARK MODE ───────────────────────────────────────────────────── -->
+<rect x="0" y="235" width="660" height="195" fill="#0d1117"/>
+
+<text x="330" y="257" text-anchor="middle" font-size="11" fill="#6e7681" letter-spacing="0.08em" font-weight="500">DARK MODE</text>
+
+<!-- Hub dark (cx=110) -->
+<text x="110" y="279" text-anchor="middle" font-size="13" font-weight="500" fill="#e6edf3">Hub</text>
+<use href="#hub-d" x="40"  y="289" width="64" height="64"/>
+<use href="#hub-d" x="120" y="321" width="32" height="32"/>
+<use href="#hub-d" x="164" y="337" width="16" height="16"/>
+<text x="72"  y="367" text-anchor="middle" font-size="9" fill="#6e7681" font-family="monospace">64</text>
+<text x="136" y="367" text-anchor="middle" font-size="9" fill="#6e7681" font-family="monospace">32</text>
+<text x="172" y="367" text-anchor="middle" font-size="9" fill="#6e7681" font-family="monospace">16</text>
+
+<!-- Insight dark (cx=330) -->
+<text x="330" y="279" text-anchor="middle" font-size="13" font-weight="500" fill="#e6edf3">Insight</text>
+<use href="#insight-d" x="260" y="289" width="64" height="64"/>
+<use href="#insight-d" x="340" y="321" width="32" height="32"/>
+<use href="#insight-d" x="384" y="337" width="16" height="16"/>
+<text x="292" y="367" text-anchor="middle" font-size="9" fill="#6e7681" font-family="monospace">64</text>
+<text x="356" y="367" text-anchor="middle" font-size="9" fill="#6e7681" font-family="monospace">32</text>
+<text x="392" y="367" text-anchor="middle" font-size="9" fill="#6e7681" font-family="monospace">16</text>
+
+<!-- CV dark (cx=550) -->
+<text x="550" y="279" text-anchor="middle" font-size="13" font-weight="500" fill="#e6edf3">CV</text>
+<use href="#cv-d" x="480" y="289" width="64" height="64"/>
+<use href="#cv-d" x="560" y="321" width="32" height="32"/>
+<use href="#cv-d" x="604" y="337" width="16" height="16"/>
+<text x="512" y="367" text-anchor="middle" font-size="9" fill="#6e7681" font-family="monospace">64</text>
+<text x="576" y="367" text-anchor="middle" font-size="9" fill="#6e7681" font-family="monospace">32</text>
+<text x="612" y="367" text-anchor="middle" font-size="9" fill="#6e7681" font-family="monospace">16</text>
+
+<!-- Dark divider -->
+<line x1="30" y1="381" x2="630" y2="381" stroke="#30363d" stroke-width="1"/>
+
+<!-- Dark tab bar label -->
+<text x="330" y="397" text-anchor="middle" font-size="10" fill="#6e7681" letter-spacing="0.06em" font-weight="500">TAB BAR TEST — DARK</text>
+
+<!-- Dark tabs (y=405, h=20) -->
+<rect x="90"  y="405" width="155" height="20" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<use href="#hub-d"     x="98"  y="407" width="16" height="16"/>
+<text x="120" y="419" font-size="11" fill="#8b949e">ale-saglia.com</text>
+
+<rect x="253" y="405" width="155" height="20" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<use href="#insight-d" x="261" y="407" width="16" height="16"/>
+<text x="283" y="419" font-size="11" fill="#8b949e">Insight Notes</text>
+
+<rect x="416" y="405" width="155" height="20" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<use href="#cv-d"      x="424" y="407" width="16" height="16"/>
+<text x="446" y="419" font-size="11" fill="#8b949e">CV — A. Saglia</text>
+
+</svg>
