@@ -14,7 +14,7 @@ The visual style mirrors [insight.ale-saglia.com](https://insight.ale-saglia.com
 |-----------|-----------|---------|
 | [ale-saglia.com](https://ale-saglia.com) | this repo | Landing page |
 | [insight.ale-saglia.com](https://insight.ale-saglia.com) | [ale-saglia/insight](https://github.com/ale-saglia/insight) | Technical and governance writing |
-| cv.ale-saglia.com | ale-saglia/cv *(planned)* | CV |
+| [cv.ale-saglia.com](https://cv.ale-saglia.com) | [ale-saglia/cv](https://github.com/ale-saglia/cv) | CV |
 
 ## Deployment
 
